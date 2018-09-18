@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Congruence Function</title>
+</head>
+<body>
+<p>The Sum of Congruence Modulo for the input array is: </p>
+<p id="demo"></p>
+<script>
+function sumCongruentModulo(inputArray, divisor, remainder) { 
+var sum = 0;
+try{
+if(inputArray.length > 0){
+for(let i = 0; i < inputArray.length ; i++){
+if((inputArray[i] % divisor) == remainder ){
+sum = sum + inputArray[i] ;
+}
+}
+}else{
+alert('The input is blank');
+}
+}catch(err)
+{
+if (e instanceof ReferenceError) {
+        printError(e, true);
+    } else {
+        printError(e, false);
+    }
+}
+return sum;
+}
+console.log(sumCongruentModulo([1,2,3,6], 3, 0)); 
+document.getElementById('demo').innerHTML = sumCongruentModulo([1,2,3,6], 3, 0);
+</script>
+</body>
+</html>
