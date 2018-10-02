@@ -8,4 +8,4 @@ This Html file contains a congruence function which sums up when the remainder e
 
 <img src='output.PNG'>
 
-### Gauri Govind Rajulu -- A20404821
+### Gauri Rajulu
