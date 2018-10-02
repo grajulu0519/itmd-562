@@ -1,4 +1,4 @@
-##Week 06 Assignment
+## Week 06 Assignment
 
 The app has the functionality using the following flow.
 
@@ -17,5 +17,8 @@ The app has the functionality using the following flow.
 5.	Run `curl localhost:3000/counter`
 1.	This does a GET against the provided route and should return a 0 with a 200 success code, as the counter has been reset
 
+## Output :
 
-##By Gauri Govind Rajulu
+<img src='Week06_output.PNG'>
+
+## By Gauri Govind Rajulu
