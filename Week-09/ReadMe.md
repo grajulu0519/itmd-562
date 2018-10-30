@@ -28,3 +28,18 @@ DELETE /books/{id}</br>
 Delete the book stored at the id</br>
 Return 204 on successful deletion.</br>
 
+# Curl Statements:
+
+curl -X POST -H "Content-Type:application/json" -d '{"title":"Geek Love","author":"Katherine Dunn","numPages":60}' localhost:3000/books
+
+
+curl -X PUT -H "Content-Type:application/json" -d '{"title":"Geek Love","author":"Katherine Dunn","numPages":90}' 
+
+
+localhost:3000/books/5bd8b6cc0c4ca94e74dc7508
+
+
+curl localhost:3000/books/5bd8b6cc0c4ca94e74dc7508
+
+
+curl -X DELETE localhost:3000/books/5bd7db11afce014b00d40172
