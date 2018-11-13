@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+  h1.mt-5= book.title
+  h3.mt-5= "- A book by '" + book.author + "'"
+  h6.mt-5= "Number of Pages " + book.numPages
+  h1.mt-6
+    p
+      form(action='/books/' + book.id + '/delete' method="POST") 
+        button.btn.btn-outline-danger(type='submit') Delete
+        a.btn.btn-outline-primary(href='/books/' + book.id + '/update' style='margin-left: 25px') Update 
+    hr
