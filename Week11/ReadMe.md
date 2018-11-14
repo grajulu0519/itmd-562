@@ -13,7 +13,10 @@ Other Details
 
 ## Add New Book 
 
-<img src='images/newbook.png' width=200px height=200px>
+<img src='images/newbook.png'>
+#New Book Added
+<img src='images/newbookadded.jpg'>
+
 
 ## Update Book
 
