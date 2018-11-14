@@ -13,7 +13,7 @@ Other Details
 
 ## Add New Book 
 
-<img src='images/'>
+<img src='images/newbook.png'>
 
 ## Update Book
 
