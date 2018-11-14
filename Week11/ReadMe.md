@@ -32,6 +32,3 @@ Other Details
 <img src='images/delete.jpg'>
 <img src='images/deleted.jpg'>
 
-## View Books
-
-<img src='images/getbooks.jpg'>
