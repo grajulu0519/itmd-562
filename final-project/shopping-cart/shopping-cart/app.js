@@ -12,9 +12,12 @@ var usersRouter = require('./routes/users');
 var session = require('express-session');
 var passport = require('passport');
 var flash = require('connect-flash');
+var validator = require('express-validator');
+
 
 var app = express();
 mongoose.connect("mongodb://localhost:27017/shopping", { useNewUrlParser: true });
+require('./config/passport');
 // view engine setup
 //app.set('views', path.join(__dirname, 'views'));
 app.engine('.hbs',expressHbs({defaultLayout:'layout',extname:'.hbs'}));
@@ -23,6 +26,7 @@ app.set('view engine', '.hbs');
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(validator());
 app.use(cookieParser());
 app.use(session({secret: 'gauriankitsecretkey', resave: false, saveUninitialized: false}));  
 app.use(flash());
