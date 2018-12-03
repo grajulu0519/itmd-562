@@ -28,7 +28,10 @@
         </div>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fas fa-cart-plus"></i> Shopping Cart</a>
+        <a class="nav-link" href="/shopping-cart/">
+          <i class="fas fa-cart-plus"></i> Shopping Cart
+          <span class="badge">{{session.cart.totalQty}}</span>
+        </a>
       </li>
       {{!-- <li class="nav-item">
         <a class="nav-link disabled" href="#">Disabled</a>
